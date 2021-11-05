@@ -2,7 +2,7 @@
 # Contributor: Andrew Chen <andrew@xortux.com>
 
 _target=aarch64-none-linux-gnu
-_pkgver=10.3-2021.07
+_pkgver=9.2-2019.12
 
 pkgname=${_target}-toolchain-bin
 pkgver=${_pkgver//-/_}
@@ -14,7 +14,7 @@ license=('GPL' 'LGPL')
 depends=(binutils)
 options=(!emptydirs !strip staticlibs)
 source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${_pkgver}/binrel/gcc-arm-${_pkgver}-x86_64-${_target}.tar.xz")
-md5sums=(07bbe2b5277b75ba36a924e9136366a4)
+md5sums=(23ecc1dc528253c43e43365c6d923ec3)
 
 package() {
   mkdir -p ${pkgdir}/usr

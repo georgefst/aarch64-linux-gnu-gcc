@@ -10,7 +10,7 @@ pkgbase = arm-none-linux-gnueabihf-toolchain-bin
 	options = !emptydirs
 	options = !strip
 	options = staticlibs
-	source = https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar.xz
+	source = https://developer.arm.com/-/media/Files/downloads/gnu-a/9.2-2019.12/binrel/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz
 	md5sums = 07bbe2b5277b75ba36a924e9136366a4
 
 pkgname = aarch64-none-linux-gnu-toolchain-bin
