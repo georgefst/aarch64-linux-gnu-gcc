@@ -1,20 +1,20 @@
 # Maintainer: Nathan Henrie <nate@n8henrie.com>
 # Contributor: Andrew Chen <andrew@xortux.com>
 
-_target=arm-none-linux-gnueabihf
+_target=aarch64-none-linux-gnu
 _pkgver=10.3-2021.07
 
 pkgname=${_target}-toolchain-bin
 pkgver=${_pkgver//-/_}
 pkgrel=1
-pkgdesc="GNU Toolchain for the Cortex-A Family"
+pkgdesc="GNU Toolchain for the Cortex-A Family (64-bit)"
 arch=('x86_64')
 url="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads"
 license=('GPL' 'LGPL')
 depends=(binutils)
 options=(!emptydirs !strip staticlibs)
 source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${_pkgver}/binrel/gcc-arm-${_pkgver}-x86_64-${_target}.tar.xz")
-md5sums=(87ec580b290df2febc7c476f59484635)
+md5sums=(07bbe2b5277b75ba36a924e9136366a4)
 
 package() {
   mkdir -p ${pkgdir}/usr
