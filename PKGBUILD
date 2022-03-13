@@ -10,6 +10,7 @@ arch=('x86_64')
 url="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads"
 license=('GPL' 'LGPL')
 depends=(binutils)
+conflicts=('aarch64-linux-gnu-gcc')
 options=(!emptydirs !strip staticlibs)
 source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${pkgver}/binrel/gcc-arm-${pkgver}-x86_64-${target}.tar.xz")
 md5sums=(23ecc1dc528253c43e43365c6d923ec3)
