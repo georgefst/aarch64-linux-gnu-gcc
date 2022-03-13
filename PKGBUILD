@@ -1,8 +1,8 @@
 # Maintainer: George Thomas <georgefsthomas@gmail.com>
 
 target=aarch64-none-linux-gnu
-pkgver=9.2
-pkgrel=2019.12
+pkgver=10.3
+pkgrel=2021.07
 pkgverfull=${pkgver}-${pkgrel}
 pkgname=${target}-gcc-${pkgver}-bin
 pkgdesc="GNU Cross Compilation Toolchain for AArch64 (GCC 9.2)"
@@ -13,7 +13,7 @@ depends=(binutils)
 conflicts=('aarch64-linux-gnu-gcc')
 options=(!emptydirs !strip staticlibs)
 source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${pkgverfull}/binrel/gcc-arm-${pkgverfull}-x86_64-${target}.tar.xz")
-md5sums=(23ecc1dc528253c43e43365c6d923ec3)
+md5sums=(07bbe2b5277b75ba36a924e9136366a4)
 
 package() {
   mkdir -p ${pkgdir}/usr
