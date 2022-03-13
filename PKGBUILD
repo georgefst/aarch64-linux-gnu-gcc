@@ -4,7 +4,6 @@ target=aarch64-none-linux-gnu
 pkgver=9.2-2019.12
 
 pkgname=${target}-gcc
-pkgver=${pkgver}
 pkgdesc="GNU Cross Compilation Toolchain for AArch64 (GCC 9.2)"
 arch=('x86_64')
 url="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads"
