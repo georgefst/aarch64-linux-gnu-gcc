@@ -1,19 +1,17 @@
-# Maintainer: Nathan Henrie <nate@n8henrie.com>
-# Contributor: Andrew Chen <andrew@xortux.com>
+# Maintainer: George Thomas <georgefsthomas@gmail.com>
 
-_target=aarch64-none-linux-gnu
-_pkgver=9.2-2019.12
+target=aarch64-none-linux-gnu
+pkgver=9.2-2019.12
 
-pkgname=${_target}-toolchain-bin
-pkgver=${_pkgver//-/_}
-pkgrel=1
-pkgdesc="GNU Toolchain for the Cortex-A Family (64-bit)"
+pkgname=${target}-toolchain-bin
+pkgver=${pkgver}
+pkgdesc="GNU Cross Compilation Toolchain for AArch64 (GCC 9.2)"
 arch=('x86_64')
 url="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads"
 license=('GPL' 'LGPL')
 depends=(binutils)
 options=(!emptydirs !strip staticlibs)
-source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${_pkgver}/binrel/gcc-arm-${_pkgver}-x86_64-${_target}.tar.xz")
+source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${pkgver}/binrel/gcc-arm-${pkgver}-x86_64-${target}.tar.xz")
 md5sums=(23ecc1dc528253c43e43365c6d923ec3)
 
 package() {
