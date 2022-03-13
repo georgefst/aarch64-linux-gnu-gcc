@@ -1,7 +1,9 @@
 # Maintainer: George Thomas <georgefsthomas@gmail.com>
 
 target=aarch64-none-linux-gnu
-pkgver=9.2-2019.12
+pkgver=9.2
+pkgrel=2019.12
+pkgverfull=${pkgver}-${pkgrel}
 pkgname=${target}-gcc
 pkgdesc="GNU Cross Compilation Toolchain for AArch64 (GCC 9.2)"
 arch=('x86_64')
@@ -10,12 +12,12 @@ license=('GPL' 'LGPL')
 depends=(binutils)
 conflicts=('aarch64-linux-gnu-gcc')
 options=(!emptydirs !strip staticlibs)
-source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${pkgver}/binrel/gcc-arm-${pkgver}-x86_64-${target}.tar.xz")
+source=("https://developer.arm.com/-/media/Files/downloads/gnu-a/${pkgverfull}/binrel/gcc-arm-${pkgverfull}-x86_64-${target}.tar.xz")
 md5sums=(23ecc1dc528253c43e43365c6d923ec3)
 
 package() {
   mkdir -p ${pkgdir}/usr
-  cp -a ${srcdir}/gcc-arm-${pkgver}-x86_64-${_target}/* ${pkgdir}/usr
+  cp -a ${srcdir}/gcc-arm-${pkgverfull}-x86_64-${_target}/* ${pkgdir}/usr
 
   rm -f ${pkgdir}/usr/*-manifest.txt
   rm -rf ${pkgdir}/usr/lib64
