@@ -2,7 +2,6 @@
 
 target=aarch64-none-linux-gnu
 pkgver=9.2-2019.12
-
 pkgname=${target}-gcc
 pkgdesc="GNU Cross Compilation Toolchain for AArch64 (GCC 9.2)"
 arch=('x86_64')
