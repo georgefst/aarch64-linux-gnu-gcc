@@ -16,7 +16,7 @@ md5sums=(23ecc1dc528253c43e43365c6d923ec3)
 
 package() {
   mkdir -p ${pkgdir}/usr
-  cp -a ${srcdir}/gcc-arm-${_pkgver}-x86_64-${_target}/* ${pkgdir}/usr
+  cp -a ${srcdir}/gcc-arm-${pkgver}-x86_64-${_target}/* ${pkgdir}/usr
 
   rm -f ${pkgdir}/usr/*-manifest.txt
   rm -rf ${pkgdir}/usr/lib64
